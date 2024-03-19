@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            grid-gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function register() {
+            var registrationMessage = document.getElementById('registration-message');
+            registrationMessage.innerText = 'Registered';
+            document.getElementById('registration-form').submit();
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Course Registration</h1>
+    </header>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="process-registration.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="web-development">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="digital-marketing">Digital marketing</option>
+                <option value="mobile-app-development">Mobile-app-development</option>
+                <option value="graphic-design">Graphic design</option>
+                <option value="ux-ui-design">UX/UI Design</option>
+                <option value="artificial-intelligence">Artificial intelligence</option>
+            </select>
+
+            <input type="button" value="Register" onclick="register()" style="background-color: #45a049;">
+        </form>
+        <p id="registration-message"></p>
+    </section>
+
+</body>
+</html>

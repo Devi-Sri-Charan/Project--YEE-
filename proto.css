@@ -1,0 +1,242 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, footer {
+    margin: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+#header {
+    background-image: url(./imgs/employment.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 10px;
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#home .mission, #home .benefits, #home .cta {
+    margin-bottom: 40px;
+}
+
+#home h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#home li {
+    margin-bottom: 10px;
+}
+
+#home .button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#home .button:hover {
+    background-color: #45a049;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+#courses {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.course {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+.course-image {
+    max-width: 100%;
+    height: auto; 
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+}
+
+
+h2, h3 {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    #courses {
+        padding: 10px;
+    }
+
+    .course {
+        max-width: 100%;
+    }
+}
+
+#contact {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4CAF50;
+    text-align: left; 
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#contactForm button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
+
